@@ -1,0 +1,5 @@
+package com.springbootsecuritynewRepository;
+
+public class UserAuthRepository {
+
+}

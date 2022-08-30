@@ -1,0 +1,13 @@
+package com.hnt.orderService.service;
+
+import com.hnt.orderService.Entity.User;
+
+public class UserService {
+	
+	
+	
+	public void save(User user) {
+		repository.save(user);
+	}
+
+}

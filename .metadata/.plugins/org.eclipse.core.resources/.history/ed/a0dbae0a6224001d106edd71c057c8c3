@@ -1,0 +1,5 @@
+package com.springbootsecuritynewEntity;
+
+public class AuthUser {
+
+}

@@ -1,0 +1,28 @@
+package com.hnt.orderService.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.hnt.orderService.Entity.User;
+import com.hnt.orderService.service.UserService;
+
+class UserControllerTest {
+	
+	
+	@Mock
+	UserService service;
+	
+	@InjectMocks
+	UserController userController;
+
+	@Test
+	void testSaveUser() {
+		User user=new User();
+		when(service.save(user)).thenReturn(user);
+	}
+
+}

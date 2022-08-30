@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="UserServiceTest" project="OrderService" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.hnt.orderService.service.UserServiceTest" time="1.414" displayname="UserServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.hnt.orderService.service.UserServiceTest]">
+    <testcase name="testgetUser" classname="com.hnt.orderService.service.UserServiceTest" time="1.395" displayname="testgetUser()" uniqueid="[engine:junit-jupiter]/[class:com.hnt.orderService.service.UserServiceTest]/[method:testgetUser()]"/>
+    <testcase name="testsaveUser" classname="com.hnt.orderService.service.UserServiceTest" time="0.019" displayname="testsaveUser()" uniqueid="[engine:junit-jupiter]/[class:com.hnt.orderService.service.UserServiceTest]/[method:testsaveUser()]"/>
+  </testsuite>
+</testrun>

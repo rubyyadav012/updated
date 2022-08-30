@@ -1,0 +1,17 @@
+package com.hnt.orderService.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hnt.orderService.Entity.User;
+import com.hnt.orderService.repository.UserRepository;
+
+public class UserService {
+	
+	@Autowired
+	 private UserRepository userRespository;
+	
+	public void save(User user) {
+		userRespository.save(user);
+	}
+
+}

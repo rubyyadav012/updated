@@ -1,0 +1,45 @@
+package com.hnt.orderService.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hnt.orderService.Entity.User;
+import com.hnt.orderService.repository.UserRepository;
+
+class UserServiceTest {
+	
+	
+	
+	@Mock
+	  UserRepository userRespository;
+
+	@InjectMocks
+	UserService userService;
+	
+	@Test
+	void testgetUser() {
+		User user=new User();
+		
+		user.setId(1);
+		user.setAge(23);
+		user.setName("ruby");
+		List<User> list=new ArrayList<User>();
+		list.add(user);
+		when(userRespository.findAll()).thenReturn(list);
+		List<> ls=userService.getUser();
+		assertEquals(1, userService.getUser().size());
+		
+	
+	}
+	
+	
+
+}

@@ -1,0 +1,5 @@
+package com.hnt.orderService.Entity;
+
+public class User {
+
+}
